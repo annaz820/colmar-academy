@@ -1,0 +1,138 @@
+header {
+  height: 64px;
+  background-color: teal;
+}
+
+header img {
+  padding-left: 24px;
+}
+
+header span {
+  margin: 0;
+  font-size: 24px;
+  float: left;
+}
+
+nav {
+  display: inline-flex;
+  float: right;
+  margin: 0;
+  padding: 23px 0;
+}
+
+nav a {
+  margin: 0 auto;
+  padding-right: 16px;
+  color: white;
+
+}
+
+.logo {
+  display: inline-flex;
+  height: 64px;
+  justify-content: center;
+  flex-direction: column;
+  float: left;
+}
+
+.logo img {
+  height: 32px;
+}
+
+.name {
+  display: inline-block;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.banner-left {
+  width: 60%;
+  padding: 24px;
+}
+
+.banner-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.btn {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: lightblue;
+  text-align: center;
+}
+
+.banner-left img {
+  width: 100%;
+}
+
+.main-left {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.main-left img {
+  width: 100%;
+}
+
+.main-left h1 {
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+
+.main-left p {
+  padding-bottom: 28px;
+}
+
+.main-right {
+  flex-basis: 40%;
+}
+
+.main-container {
+  display: flex;
+  border: 1px solid seashell;
+}
+
+.main-container-left {
+  flex-basis: 35%;
+}
+
+.main-container-left.special {
+  padding-top: 16px;
+}
+
+.main-container-left img {
+  padding: 16px;
+}
+
+.main-container-right {
+  border: 1px solid black;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-container-right h1,
+.main-container-right h5 {
+  padding-bottom: 8px;
+}
+
+ #nav-last {
+   padding-right: 24px;
+ }
+
+#banner {
+  display: flex;
+  width: 100%;
+  margin-top: 32px;
+  justify-content: flex-start;
+  background-color: yellow;
+}
+
+#main {
+  display: flex;
+  background-color: pink;
+}
