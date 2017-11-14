@@ -128,7 +128,7 @@ nav a {
 
 .learning-container {
   display: flex;
-  flex-basis: 30%;
+  width: 100%;
 }
 
 .learning-container img {
