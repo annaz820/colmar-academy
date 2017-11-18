@@ -1,6 +1,11 @@
+html {
+  color: hsl(0, 0%, 23%);
+}
+
 header {
   height: 64px;
-  background-color: teal;
+  background-color: hsl(210, 100%, 50%);
+  font-family: "Roboto",sans-serif;
 }
 
 header img {
@@ -11,6 +16,14 @@ header span {
   margin: 0;
   font-size: 24px;
   float: left;
+  font-weight: bold;
+}
+
+span.colmar {
+  color: hsl(0, 0%, 75%);
+}
+span.academy {
+  color: white;
 }
 
 nav {
@@ -24,13 +37,54 @@ nav a {
   margin: 0 auto;
   padding-right: 16px;
   color: white;
-
 }
 
 footer {
-  padding-left: 24px;
-  padding-top: 16px;
-  border-top: 1px solid grey;
+  padding: 16px 10px 40px 24px;
+  background-color: hsl(168, 100%, 90%);
+  font-family: "Roboto",sans-serif;
+  font-size: 16px;
+  background-color: hsl(210, 100%, 50%);
+  color: white;
+}
+
+footer a {
+  padding-right: 12px;
+  float: right;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: hsl(0, 0%, 23%);
+}
+
+h2 {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: hsl(0, 0%, 23%);
+}
+
+h3 {
+  font-size: 30px;
+  padding: 20px 0;
+  font-family: "Roboto", sans-serif;
+  color: hsl(0, 0%, 23%);
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+p {
+  font-size: 20px;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .logo {
@@ -42,13 +96,13 @@ footer {
 }
 
 .logo img {
-  height: 32px;
+  height: 40px;
 }
 
 .name {
   display: inline-block;
   margin: 0;
-  padding: 20px 0;
+  padding: 17.5px 0;
 }
 
 .banner-left {
@@ -61,13 +115,23 @@ footer {
   flex-direction: column;
   justify-content: center;
   width: 40%;
+  padding-left: 24px;
 }
 
 .btn {
   padding-top: 8px;
   padding-bottom: 8px;
-  background-color: lightblue;
+  background-color: hsl(210, 100%, 50%);
   text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  width: 60%;
+  font-size: 25px;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: hsl(210, 100%, 40%);
 }
 
 .banner-left img {
@@ -76,7 +140,7 @@ footer {
 
 .main-left {
   width: 60%;
-  padding: 32px 24px;
+  padding: 32px 48px 32px 24px;
 }
 
 .main-left img {
@@ -98,7 +162,7 @@ footer {
 
 .main-container {
   display: flex;
-  border: 1px solid seashell;
+  border: 2px solid hsl(210, 20%, 90%);
 }
 
 .main-container-left {
@@ -114,28 +178,39 @@ footer {
 }
 
 .main-container-right {
-  border: 1px solid black;
-  width: 65%;
+  flex-basis: 65%;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-.main-container-right h1,
+.main-container-right a {
+  color: hsl(210, 100%, 50%);
+  font-size: 18px;
+}
+
+.main-container-right a:hover {
+  color: hsl(210, 100%, 40%);
+  font-style: italic;
+}
+
+.main-container-right h3,
 .main-container-right h5 {
   padding-bottom: 8px;
+  padding-top: 0;
+  margin: 0 0;
 }
 
 .learning-row {
   display: flex;
-  margin: 32px 72px;
-  flex: 1 1 auto;
+  margin: 0 72px 32px 72px;
 }
 
 .learning-container {
   display: flex;
   width: 100%;
   flex-direction: column;
+  background-color: white;
 }
 
 .learning-container img {
@@ -144,20 +219,34 @@ footer {
 }
 
 .learning-container.special {
-  padding-right: 32px;
+  margin-right: 32px;
 }
 
 .container-text {
   padding: 16px 16px 24px 16px;
 }
 
-.courses {
-  padding-bottom: 8px;
+.container-text span,
+.container-text p {
+  font-family: "Heebo",sans-serif;
+  font-size: 20px;
+}
+
+.specialbox {
+  background-color: hsl(210, 100%, 95%);
+}
+
+.container-text p {
+  margin: 8px 0 0 0;
+}
+
+.container-text h3 {
+  margin: 0;
+  padding: 0 0 8px 0;
 }
 
 .thesis-exhibit {
   display: flex;
-
 }
 
 .thesis-left {
@@ -165,6 +254,17 @@ footer {
   flex-direction: column;
   flex-basis: 60%;
   padding: 0 24px 24px 24px;
+  border-right: 1px solid hsl(240, 100%, 95%);
+}
+
+.thesis-left-text h3 {
+  margin: 0;
+  padding: 24px 0 8px 0;
+}
+
+.thesis-left-text p {
+  margin: 0;
+  padding: 0 0 32px 0;
 }
 
 .video {
@@ -175,6 +275,39 @@ footer {
   flex-basis: 40%;
 }
 
+.thesis-right-row {
+  display: flex;
+}
+
+.thesis-right-row img {
+  padding: 16px;
+  flex-basis: 35%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 16px;
+  flex-basis: 65%;
+}
+
+.text h3 {
+  margin: 0;
+  padding: 0 0 8px 0;
+  width: 90%;
+}
+
+.text span {
+  width: 80%;
+}
+
+.thesis-right-row .text span,
+.thesis-left-text p {
+  font-size: 20px;
+  font-family: "Heebo",sans-serif;
+}
+
  #nav-last {
    padding-right: 24px;
  }
@@ -183,30 +316,44 @@ footer {
   display: flex;
   width: 100%;
   justify-content: flex-start;
-  background-color: yellow;
   padding: 32px 0;
+  border-bottom: 1px solid seashell;
+  background-color: hsl(210, 100%, 95%);
 }
 
 #main {
   display: flex;
-  background-color: pink;
+  background-color: white;
+  font-family: "Heebo",sans-serif;
+}
+
+#main h1 {
+  font-family: "Heebo",sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+#main span {
+  font-style: italic;
 }
 
 #learning {
   background-color: green;
   display: flex;
   flex-direction: column;
+  background-color: hsl(210, 100%, 95%);
 }
 
 #learning h2 {
   display: block;
   width: 100%;
   text-align: center;
-  padding-top: 32px;
+  padding: 32px 0;
+  margin: 0;
 }
 
 #thesis {
-  background-color: lightblue;
+  background-color: white;
   display: flex;
   flex-direction: column;
   width: 100%;
