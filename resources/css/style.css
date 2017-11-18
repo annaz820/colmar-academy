@@ -27,6 +27,12 @@ nav a {
 
 }
 
+footer {
+  padding-left: 24px;
+  padding-top: 16px;
+  border-top: 1px solid grey;
+}
+
 .logo {
   display: inline-flex;
   height: 64px;
