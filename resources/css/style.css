@@ -44,12 +44,16 @@ nav a {
 }
 
 footer {
-  padding: 16px 10px 40px 24px;
+  padding: 16px 10px 40px 0;
   background-color: hsl(168, 100%, 90%);
   font-family: "Roboto",sans-serif;
   font-size: 16px;
   background-color: hsl(210, 100%, 50%);
   color: white;
+}
+
+i {
+  padding-left: 24px;
 }
 
 footer a {
@@ -391,6 +395,7 @@ a:hover {
   footer {
     width: 100%;
     padding-bottom: 16px;
+    padding-right: 0px;
   }
 
   footer a {
