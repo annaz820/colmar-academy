@@ -312,6 +312,10 @@ a:hover {
   font-family: "Heebo",sans-serif;
 }
 
+.grey {
+  background-color: hsl(210, 100%, 95%);
+}
+
  #nav-last {
    padding-right: 24px;
  }
@@ -441,7 +445,7 @@ a:hover {
       margin-bottom: 64px;
       background-color: white;
       border: 0px;
-    }
+  }
 
   .main-container-left {
     padding: 16px 16px 16px;
@@ -502,6 +506,7 @@ a:hover {
   .thesis-left {
     min-width: 100%;
     padding: 0 0 24px 0;
+    border-right: 0px;
   }
 
   .video {
