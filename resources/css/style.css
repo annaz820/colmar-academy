@@ -2,21 +2,25 @@ html {
   color: hsl(0, 0%, 23%);
 }
 
-header {
+header.desktop {
   height: 64px;
   background-color: hsl(210, 100%, 50%);
   font-family: "Roboto",sans-serif;
 }
 
-header img {
+header.desktop img {
   padding-left: 24px;
 }
 
-header span {
+header.desktop span {
   margin: 0;
   font-size: 24px;
   float: left;
   font-weight: bold;
+}
+
+header.mobile {
+  display: none;
 }
 
 span.colmar {
@@ -116,6 +120,10 @@ a:hover {
   justify-content: center;
   width: 40%;
   padding-left: 24px;
+}
+
+.banner-right h1 {
+  margin: 0;
 }
 
 .btn {
@@ -230,10 +238,6 @@ a:hover {
 .container-text p {
   font-family: "Heebo",sans-serif;
   font-size: 20px;
-}
-
-.specialbox {
-  background-color: hsl(210, 100%, 95%);
 }
 
 .container-text p {
@@ -364,4 +368,153 @@ a:hover {
   text-align: center;
   padding: 32px 0;
   position: relative;
+  margin: 0;
+}
+
+@media only screen and (max-width: 481px) {
+  header.mobile {
+    display: flex;
+    height: 64px;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0 20px;
+  }
+
+  header.desktop {
+    display: none;
+  }
+
+  footer {
+    width: 100%;
+    padding-bottom: 16px;
+  }
+
+  footer a {
+    display: none;
+    }
+
+  #banner {
+    flex-direction: column;
+  }
+
+  #banner {
+    padding: 0;
+  }
+
+  .banner-left {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .banner-right {
+    width: auto;
+    padding: 0 16px;
+  }
+
+  .banner-right h1 {
+    margin: 0;
+    padding: 32px 0;
+  }
+
+  .banner-right h3 {
+    padding: 0;
+    margin: 0 0 24px 0;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .main-left {
+    display: none;
+  }
+
+  .main-right {
+    flex-basis: 100%;
+  }
+
+  .main-container {
+      flex-basis: 100%;
+      flex-direction: column;
+      margin-bottom: 64px;
+      background-color: white;
+      border: 0px;
+    }
+
+  .main-container-left {
+    padding: 16px 16px 16px;
+  }
+
+  .main-container-left img {
+    min-width: 100%;
+    max-height: 240px;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-container-right {
+    margin-left: 32px;
+  }
+
+  #learning {
+    background-color: white;
+    padding: 0 16px 32px 16px;
+    border-top: 1px solid hsl(210, 20%, 90%);
+    border-bottom: 1px solid hsl(210, 20%, 90%);
+  }
+
+  .learning-row {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .learning-container {
+    width: 100%;
+    margin: 0 0 8px 0;
+    background-color: hsl(210, 100%, 95%);
+    border-radius: 4px;
+  }
+
+  .learning-container img {
+    display: none;
+  }
+
+  .container-text {
+    padding: 16px;
+  }
+
+  .learning-container.special {
+    margin: 0 0 8px 0;
+  }
+  .container-text h3 {
+    padding: 0;
+  }
+
+  .container-text span,
+  .container-text p {
+    display: none;
+  }
+
+  .thesis-left {
+    min-width: 100%;
+    padding: 0 0 24px 0;
+  }
+
+  .video {
+    min-width: 100%;
+    padding: 0;
+  }
+
+  .thesis-left-text {
+    display: none;
+  }
+
+  .thesis-right {
+    display: none;
+  }
+
 }
